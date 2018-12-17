@@ -1,0 +1,73 @@
+.GifCard{
+	position: relative;
+	cursor: pointer;
+	margin-bottom: 30px;
+}
+
+.GifCard img{
+	object-fit: cover;
+	height: 200px;
+    width: 100%;
+}
+
+.GifMeta{
+	position: absolute;
+	bottom: 0;
+	text-align: left;
+    width: 100%;
+	transition: all 0.3s;
+	padding: 16px;
+	padding-bottom: 0;
+	z-index: 10;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.GifMeta::before{
+	content: "";
+    display: block;
+    position: absolute;
+    bottom: -70px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 70px;
+    border-radius: 40%;
+    box-shadow: 0 0 100px #000, 0 0 100px #000, 0 0 100px #000, 0 0 100px #000;
+    width: 100%;
+    transition: all 0.3s;
+    z-index: 1;
+}
+
+.GifCard:hover .GifMeta{
+	padding-bottom: 16px;
+}
+
+.GifCard:hover .GifMeta::before{
+    box-shadow: 0 0 100px #000, 0 0 100px #000, 0 0 100px #000, 0 0 100px #000, 0 0 100px #000, 0 0 100px #000;
+}
+
+.GifTitle{
+	font-weight: bold;
+	color: #fff;
+	font-size: 2rem;
+	width: 100%;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+.SmallGifTitle{
+	font-weight: bold;
+	color: #fff;
+	font-size: 1.4rem;
+	width: 100%;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+.GifAuthor{
+	font-size: 0.8rem;
+	color: #ddd;
+	font-style: italic;
+}

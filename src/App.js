@@ -1,24 +1,35 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import { Switch, Route } from 'react-router-dom';
+
+// import components
+import Header from './components/UI/header';
+import Footer from './components/UI/Footer';
+// pages
+import Home from './components/Home/Home';
+import Gif from './components/Gif/Gif';
+import Upload from './components/Upload/Upload';
+
+// import App style
+import styles from './App.css';
 
 class App extends Component {
+
+	state = {
+		title: 'Giphy'
+	}
+
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+      <div className={styles.App}>
+        <Header title={this.state.title} />
+        <div className={styles.Wrapper}>
+	        <Switch>
+	        	<Route path="/" exact component={Home} />
+	        	<Route path="/upload" component={Upload} />
+	        	<Route path="/:gif" component={Gif} />
+	        </Switch>
+        </div>
+        <Footer />
       </div>
     );
   }

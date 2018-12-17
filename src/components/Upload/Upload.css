@@ -1,0 +1,19 @@
+.UploadPage{
+	text-align: left;
+	color: #fff;
+	float: left;
+}
+
+.UploadPage:after{
+	clear: both;
+}
+
+.Title{
+	color: #fff;
+	text-align: left;
+	margin-bottom: 24px;
+}
+
+.Uploader{
+	margin: 24px 0;
+}

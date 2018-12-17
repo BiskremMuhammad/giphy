@@ -1,0 +1,129 @@
+.AppHeader {
+  background-color: rgba(0,0,0,0.6);
+  display: flex;
+  z-index: 100;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 60px;
+}
+
+.Wrapper{
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  padding: 0 40px;
+  flex-direction: row;
+  align-items: center;
+}
+
+.AppLogo {
+  width: auto;
+  height: 36px;
+}
+
+/* THE LOGO   ***********************************/
+.LogoText{
+  fill: #fff;
+}
+.LogoP1{ fill: #00ff99; }
+.LogoP2{ fill: #9933ff; }
+.LogoP3{ fill: #00ccff; }
+.LogoP4{ fill: #fff35c; }
+.LogoP5{ fill: #ff6666; }
+.LogoP6{ fill: #000; opacity: 0.4; }
+
+
+.AppLink {
+  color: #61dafb;
+}
+
+.Nav{
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.NavLink, .NavLink:visited{
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 8px 16px;
+  text-decoration: none;
+  color: #fff;
+  transition: all 0.3s;
+}
+
+.NavLink:hover{
+  text-decoration: none;
+  color: #007aff;
+}
+
+.Search{
+  display: inline-block;
+  width: 30%;
+  margin-left: 24px;
+  display: flex;
+}
+
+.Search input{
+  display: inline-block;
+  flex: 1;
+  padding: 2px 8px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.Search button{
+  display: inline-block;
+  transform: scaleX(-1);
+  cursor: pointer;
+  background: linear-gradient(45deg, rgb(153, 51, 255) 0%, rgb(255, 102, 102) 100%);
+  border: none;
+  color: #fff;
+  transition: all 0.3s;
+  padding: 0 8px;
+}
+
+.Search button:hover{
+  background: linear-gradient(45deg, rgb(107, 30, 185) 0%, rgb(255, 102, 102) 100%);
+}
+
+.FooterContainer{
+  clear: both;
+  margin-top: 98px;
+  margin-bottom: 24px;
+}
+
+.FootWrapper{
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 40px;
+}
+
+.Footer{
+  border-top: 3px solid #2e3440;
+  padding-top: 16px;
+}
+
+.Copyright{
+  text-align: right;
+  color: #636f88;
+  font-style: italic;
+  font-size: 14px;
+}
+
+.Biskrem{
+  color: #636f88;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.Biskrem:hover{
+  text-decoration: underline;
+}

@@ -1,0 +1,32 @@
+.LoadMoreContainer{
+	display: flex;
+	justify-content: center;
+}
+
+.LoadMore{
+	padding: 8px 24px;
+	background: #fff;
+	color: #43a3ba;
+	font-weight: bold;
+	font-size: 16px;
+	border-radius: 32px;
+	box-shadow: 0 5px 5px rgba(0,0,0,0.4);
+	line-height: 32px;
+	border: none;
+	cursor: pointer;
+	transition: all 0.3s;
+}
+
+.LoadMore:hover{
+	transform: scale(1.07);
+}
+
+.Icon{
+	margin-left: 12px;
+	height: 32px;
+}
+
+.Arrow{
+	height: 32px;
+	width: auto;
+}

@@ -1,0 +1,12 @@
+.FluidContainer{
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: #282c34;
+	width: 100vw;
+	height: calc(100vh - 60px);
+	margin-top: 60px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
